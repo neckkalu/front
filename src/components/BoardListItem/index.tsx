@@ -1,7 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-export default function Index() {
+//          component         //
+// description: Board List Item 컴포넌트 //
+export default function BoardListItem() {
+
+  //          render          //
+  // description: Board List Item 컴포넌트 렌더링 //
   return (
-    <div>Index</div>
+    <div className='board-list-item'>
+      <div className='board-list-item-box'></div>
+      <div className='board-list-item-image'></div>
+    </div>
   )
 }
