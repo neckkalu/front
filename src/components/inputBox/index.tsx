@@ -18,7 +18,7 @@ const InputBox = forwardRef<HTMLInputElement, Props>((props: Props, ref) => {
 //          state:properties          //
 const { label, type, placeholder, value, error } = props;
 
-//         event halnder: input값 변경 이벤트 처리 함수          //
+//         event handler: input값 변경 이벤트 처리 함수          //
 
 
 //         render: Input Box 컴포넌트           //
