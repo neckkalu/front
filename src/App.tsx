@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
-import InputBox from 'components/inputBox';
+
+import Header from 'layouts/Header';
+import InputBox from 'components/InputBox';
+import Footer from 'layouts/Footer';
+
+
 
 function App() {
 
@@ -8,7 +13,8 @@ function App() {
   
   return (
     <>
-    <InputBox />
+    <Header />
+    <Footer />
     </>
   );
 }
