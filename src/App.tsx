@@ -13,8 +13,10 @@ function App() {
   
   return (
     <>
-    <Header />
-    <Footer />
+    
+    <InputBox label={''} type={'text'} placeholder={''} value={''} setValue={function (value: React.SetStateAction<string>): void {
+        throw new Error('Function not implemented.');
+      } } error={false} />
     </>
   );
 }
