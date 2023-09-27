@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 //          component         //
-// description: Board List Item 컴포넌트 //
+// description: Board List Item 컴포넌트 //git add .
 export default function FaceToFaceBoardListItem() {
 
   //          render          //
