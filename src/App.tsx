@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-
 import Header from 'layouts/Header';
 import InputBox from 'components/InputBox';
 import membershipInputBox from 'components/membershipInputBox';
@@ -21,9 +20,12 @@ import FTFBoardWrite from 'views/FaceTofaceboard/Write';
 import { MAIN_PATH, AUTH_PATH, FILTER_PATH, USER_PATH, FTFBOARD_PATH, FTFBOARD_WRITE_PATH, FTFBOARD_DETAIL_PATH, FTFBOARD_UPDATE_PATH, BOARD_WRITE_PATH, BOARD_DETAIL_PATH, BOARD_UPDATE_PATH, BOARD_PATH  } from 'constant';
 
 
+<<<<<<< HEAD
 
 
 //             compoent: Application 컴포넌트             //
+=======
+>>>>>>> d344f62a02861ca86a5513223002952465e7711c
 function App() {
 
   const [value, setValue] = useState<string>('');
@@ -44,6 +46,7 @@ function App() {
   
   
   return (
+<<<<<<< HEAD
     <Routes>
       <Route element={<Container />}>
       <Route path={MAIN_PATH()} element={<Main />} />
@@ -71,6 +74,13 @@ function App() {
     //   } } error={false} />
     //   <Footer />
     // </>
+=======
+    <>
+      <InputBox label={''} type={'text'} placeholder={''} value={''} setValue={function (value: React.SetStateAction<string>): void {
+        throw new Error('Function not implemented.');
+      } } error={false} />
+    </>
+>>>>>>> d344f62a02861ca86a5513223002952465e7711c
   );
 }
 
