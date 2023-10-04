@@ -12,8 +12,8 @@ interface Props {
 }
 
 
-// description: inputBox 컴포넌트 //
-const InputBox = forwardRef<HTMLInputElement, Props>((props: Props, ref) => {
+// description: membershipinputBox 컴포넌트 //
+const membershipInputBox = forwardRef<HTMLInputElement, Props>((props: Props, ref) => {
 
 //          state:properties          //
 const { label, type, placeholder, value, error } = props;
@@ -69,5 +69,5 @@ const { label, type, placeholder, value, error } = props;
 
 })
 
-export default InputBox;
+export default membershipInputBox;
 

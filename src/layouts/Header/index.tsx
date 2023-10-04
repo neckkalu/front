@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Dispatch, SetStateAction, forwardRef } from 'react';
 import './style.css'
 
 //          component          //
@@ -20,7 +20,7 @@ export default function Header() {
       <div className="header-left-logo-text">우리 동네 운동 친구</div>
       </div>
       <div className="header-right">
-
+      <div className="header-right-login-button"></div>
       </div>
     </div>
     

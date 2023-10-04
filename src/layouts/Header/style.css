@@ -33,3 +33,23 @@
   font-weight:400;
   letter-spacing: -0.4px;
 }
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-login-button {
+  width: 95px;
+  height: 30px;
+  border-radius: 46px;
+  flex-shrink: 0;
+  float: right;
+
+  background: black;
+  background-position: left;
+  background-size: 200%;
+  font-weight: bold;
+  cursor:pointer;
+
+}
