@@ -3,13 +3,21 @@
 
   height: 64px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+.header-container {
+  width: 90%;
+
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .header-left {
   display: flex;
   align-items: center;
+  gap: 5px;
 }
 
 .header-left:hover {
@@ -36,7 +44,9 @@
 
 .header-right {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
 }
 
 .header-right-login-button {
@@ -46,10 +56,20 @@
   flex-shrink: 0;
   float: right;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background: black;
   background-position: left;
   background-size: 200%;
+  color: #ffffff;
   font-weight: bold;
   cursor:pointer;
 
 }
+/*
+.search-light-icon {
+  background-image: url(../);
+}
+*/
