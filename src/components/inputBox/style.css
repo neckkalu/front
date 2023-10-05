@@ -1,3 +1,4 @@
+
 .inputbox {
   display: flex;
   flex-direction: column;
@@ -28,6 +29,7 @@
 
 }
 
+
 .inputbox-label { /*로그인, 비밀번호 등 input받는 공간.*/
   color: #000000;
 
@@ -45,7 +47,7 @@
   padding: 11px 16px 11px 0px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 
   background: rgba(255, 255, 255, 0.3);
