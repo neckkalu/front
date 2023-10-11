@@ -13,6 +13,7 @@
 .filter {
   width: 902px;
   height: 80%;
+
 }
 
 .find-choice-button {
@@ -163,8 +164,35 @@
   font-weight: 1000;
 }
 
+.dong-chenk {
+  display: flex;
+  padding: 20px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 1000;
+
+  background-color: rgba(185, 185, 185, 1);
+}
+
+.dong-complete {
+  display: flex;
+  padding: 20px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 1000;
+}
+
+.dong-complete:hover {
+  cursor:pointer;
+  background-position: right;
+
+  background-color: rgba(185, 185, 185, 1);
+}
+
 .choice-fliter {
-  height: 324px;
+  height: 648px;
 }
 
 .flitering-three {
@@ -195,29 +223,33 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
+
+
 .flitering-box-three {
   width: 33.3%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
+
 
 .flitering-box-three:hover {
-  cursor:pointer;
-  background-position: right;
-
-  background-color: rgba(185, 185, 185, 1);
+  box-shadow: 0 0 0 3px rgba(0, 81, 255);
 }
+
+
+
 
 .flitering-box-two {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 
 .flitering-box-two:hover {
-  cursor:pointer;
   background-position: right;
 
   background-color: rgba(185, 185, 185, 1);
@@ -242,11 +274,64 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor:pointer;
 }
 
 .flitering-box-one:hover {
-  cursor:pointer;
   background-position: right;
 
   background-color: rgba(185, 185, 185, 1);
+}
+
+.final-box-three {
+  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+
+.final-box-three:hover {
+  box-shadow: 0 0 0 3px rgba(0, 81, 255);
+}
+
+.final-box-three:active {
+  background-color: rgba(185, 185, 185, 1);
+}
+
+
+
+.Check {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Checkbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  width: 150px;
+  height: 35px;
+
+  background: linear-gradient(125deg,#000000,#7b7b7b,#000000);
+  background-position: left;
+  background-size: 200%;
+  color:white;
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+
+  border-radius: 30px;
+
+  font-weight: 500;
+}
+
+.Checkbutton:hover {
+  background-position: right;
 }
