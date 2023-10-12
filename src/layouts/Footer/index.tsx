@@ -1,5 +1,7 @@
 import React from 'react'
 import './style.css';
+
+// component: //
 export default function Footer() {
   return (
     <div id="footer">
