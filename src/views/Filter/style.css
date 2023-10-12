@@ -195,7 +195,7 @@
   height: 648px;
 }
 
-.flitering-three {
+.filtering-three {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -209,7 +209,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.flitering-two {
+.filtering-two {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -225,7 +225,7 @@
 
 
 
-.flitering-box-three {
+.filtering-box-three {
   width: 33.3%;
   display: flex;
   justify-content: center;
@@ -234,14 +234,14 @@
 }
 
 
-.flitering-box-three:hover {
+.filtering-box-three:hover {
   box-shadow: 0 0 0 3px rgba(0, 81, 255);
 }
 
 
 
 
-.flitering-box-two {
+.filtering-box-two {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -249,13 +249,13 @@
   cursor:pointer;
 }
 
-.flitering-box-two:hover {
+.filtering-box-two:hover {
   background-position: right;
 
   background-color: rgba(185, 185, 185, 1);
 }
 
-.flitering-one {
+.filtering-one {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -269,7 +269,7 @@
   background-color: rgba(255, 255, 255, 1);
 }
 
-.flitering-box-one {
+.filtering-box-one {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,7 +277,7 @@
   cursor:pointer;
 }
 
-.flitering-box-one:hover {
+.filtering-box-one:hover {
   background-position: right;
 
   background-color: rgba(185, 185, 185, 1);
@@ -334,4 +334,8 @@
 
 .Checkbutton:hover {
   background-position: right;
+}
+
+.Checkbutton-clicked {
+  box-shadow: 0 0 0 3px rgba(0, 81, 255);
 }

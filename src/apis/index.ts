@@ -2,7 +2,7 @@ import axios from 'axios';
 import { SignInRequestDto, SignUpRequestDto } from "interface/request";
 import SignInResponseDto from "interface/response/SignInResponseDto";
 import SignUpResponseDto from 'interface/response/SignUpResponseDto';
-import ResponseDto from "./response/response.dto";
+import ResponseDto from "./response/Response.dto";
 
 const API_DOMAIN = 'http://localhost:3000/';
 

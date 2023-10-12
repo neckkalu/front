@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './style.css';
 import { useCookies } from 'react-cookie';
 import InputBox from "components/inputBox";
-import ResponseDto from "apis/response/response.dto";
+import ResponseDto from "apis/response/Response.dto";
 import { useNavigate } from "react-router-dom";
 import { MAIN_PATH } from "constant";
 import SignInResponseDto from "interface/response/SignInResponseDto";
