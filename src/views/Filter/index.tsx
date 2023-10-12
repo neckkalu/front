@@ -285,7 +285,7 @@ export default function Filter() {
 
     //     render: 두번째 필터 화면 컴포넌트 랜더링      //  
     return (
-      <div className="background">
+      <div  className="background">
         <div className="filter">
           <div className="find-choice-button">
             <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
@@ -299,6 +299,8 @@ export default function Filter() {
             <div className="dong">읍/면/동</div>
           </div>
           <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={GangwonChange}>강원특별자치도</div>
             <div className="filtering-three">
               <div className="filtering-box-three" onClick={GangwonChange}>강원특별자치도</div>
               <div className="vertical-divider-light-gray"></div>
@@ -340,6 +342,7 @@ export default function Filter() {
               <div className="filtering-box-two" onClick={ChungcheongbukChange}>충청북도</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     )
@@ -475,12 +478,12 @@ export default function Filter() {
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GyeonggiChange17}>수원시권선구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={GyeonggiChange18}>수원시영통구</div>
+              <div className="filtering-box-three" onClick={GyeonggiChange18}>수원시영통구구</div>
             </div>
             <div className="filtering-three">
               <div className="filtering-box-three" onClick={GyeonggiChange19}>수원시장안구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={GyeonggiChange20}>수원시팔달구</div>
+              <div className="filtering-box-three" onClick={GyeonggiChange20}>수원시팡달구</div>
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GyeonggiChange21}>시흥시</div>
             </div>
