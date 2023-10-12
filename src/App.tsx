@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Header from 'layouts/Header';
-import InputBox from 'components/inputBox';
+import InputBox from 'components/InputBox';
 import membershipInputBox from 'components/membershipInputBox';
 import FaceToFaceBoardListItem from 'components/FaceToFaceBoardListItem';
 import Footer from 'layouts/Footer';

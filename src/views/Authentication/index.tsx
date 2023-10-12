@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './style.css';
 import { useCookies } from 'react-cookie';
-import InputBox from "components/inputBox";
-import ResponseDto from "apis/response/response.dto";
+import InputBox from "components/InputBox";
+import ResponseDto from "apis/response/Response.dto";
 import { useNavigate } from "react-router-dom";
 import { MAIN_PATH } from "constant";
 import SignInResponseDto from "interface/response/SignInResponseDto";
@@ -59,7 +59,6 @@ export default function Authentication() {
       setCookie('accessToken', token, { expires, path: MAIN_PATH() });
       navigator(MAIN_PATH());
     }
-    
     //          event handler          //
     // description: 비밀번호 타입 변경 버튼 클릭 이벤트 //
     const onPasswordIconClickHandler = () => {
