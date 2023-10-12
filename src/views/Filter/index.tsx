@@ -306,7 +306,7 @@ export default function Filter() {
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GyeongsangnamChange}>경상남도</div>
             </div>
-            <div className="filtering-three">
+            <div className="">
               <div className="filtering-box-three" onClick={GyeongsangbukChange}>경상북도</div>
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GwangjuChange}>광주광역시</div>
