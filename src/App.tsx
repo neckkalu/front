@@ -25,18 +25,18 @@ function App() {
   const [value, setValue] = useState<string>('');
   
   // render: Appliction 컴포넌트 렌더링 //
-  // descrioption: 메인화면 : '/' -Main //
-  // descrioption: 로그인 + 회원가입 화면:  '/auth' -Authentication //
-  // descrioption: 필터링 화면:  '/Filter - Filter //
-  // descrioption: 대면 게시판 : '/FaceTofaceboard' - FaceTofaceboard //
-  // descrioption: 대면 게시판 상세보기 : '/FaceTofaceboard/detail:BoardNumber' - FTFBoardDetail //
-  // descrioption: 대면 게시판 작성하기: '/FaceTofaceboard/write' - FTFBoardWrite //
-  // descrioption: 대면 게시판 수정하기: '/FaceTofaceboard/update/:BoardNumber' - FTFBoardUpdate //
-  // descrioption: 비대면 게시판 : '/board' - board //
-  // descrioption: 비대면 게시판 상세보기 : '/board/detail:BoardNumber' - BoardDetail //
-  // descrioption: 비대면 게시판 작성하기: '/board/write' - BoardWrite //
-  // descrioption: 비대면 게시판 수정하기: '/board/update/:BoardNumber' - BoardUpdate //
-  // descrioption: 마이 페이지: '/user/:userEmail' - User //
+  // description: 메인화면 : '/' -Main //
+  // description: 로그인 + 회원가입 화면:  '/auth' -Authentication //
+  // description: 필터링 화면:  '/Filter - Filter //
+  // description: 대면 게시판 : '/FaceTofaceboard' - FaceTofaceboard //
+  // description: 대면 게시판 상세보기 : '/FaceTofaceboard/detail:BoardNumber' - FTFBoardDetail //
+  // description: 대면 게시판 작성하기: '/FaceTofaceboard/write' - FTFBoardWrite //
+  // description: 대면 게시판 수정하기: '/FaceTofaceboard/update/:BoardNumber' - FTFBoardUpdate //
+  // description: 비대면 게시판 : '/board' - board //
+  // description: 비대면 게시판 상세보기 : '/board/detail:BoardNumber' - BoardDetail //
+  // description: 비대면 게시판 작성하기: '/board/write' - BoardWrite //
+  // description: 비대면 게시판 수정하기: '/board/update/:BoardNumber' - BoardUpdate //
+  // description: 마이 페이지: '/user/:userEmail' - User //
   
   
   return (
