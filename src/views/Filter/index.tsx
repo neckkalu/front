@@ -214,7 +214,7 @@ export default function Filter() {
   const generateDaejeonChangeFunctions = () => {
     const daejeonChangeFunctions = [];
     for (let i = 1; i <= 5; i++) {
-      daejeonChangeFunctions.push(() => setFilter(i + 138));
+      daejeonChangeFunctions.push(() => setFilter(i + 139));
     }
     return daejeonChangeFunctions;
   };
@@ -228,7 +228,7 @@ export default function Filter() {
   const generateBusanChangeFunctions = () => {
     const busanChangeFunctions = [];
     for (let i = 1; i <= 16; i++) {
-      busanChangeFunctions.push(() => setFilter(i + 143));
+      busanChangeFunctions.push(() => setFilter(i + 144));
     }
     return busanChangeFunctions;
   };
@@ -239,6 +239,135 @@ export default function Filter() {
     BusanChange9, BusanChange10, BusanChange11, BusanChange12,
     BusanChange13, BusanChange14, BusanChange15, BusanChange16
   ] = generateBusanChangeFunctions();
+
+  const generateSeoulChangeFunctions = () => {
+    const seoulChangeFunctions = [];
+    for (let i = 1; i <= 25; i++) {
+      seoulChangeFunctions.push(() => setFilter(i + 160));
+    }
+    return seoulChangeFunctions;
+  };
+
+  const [
+    SeoulChange1, SeoulChange2, SeoulChange3, SeoulChange4,
+    SeoulChange5, SeoulChange6, SeoulChange7, SeoulChange8,
+    SeoulChange9, SeoulChange10, SeoulChange11, SeoulChange12,
+    SeoulChange13, SeoulChange14, SeoulChange15, SeoulChange16,
+    SeoulChange17, SeoulChange18, SeoulChange19, SeoulChange20,
+    SeoulChange21, SeoulChange22, SeoulChange23, SeoulChange24,
+    SeoulChange25
+
+  ] = generateSeoulChangeFunctions();
+
+
+  const SejongChange1 = () => {
+    setFilter(186);
+  }
+
+
+  const generateUlsanChangeFunctions = () => {
+    const UlsanChangeFunctions = [];
+    for (let i = 1; i <= 5; i++) {
+      UlsanChangeFunctions.push(() => setFilter(i + 186));
+    }
+    return UlsanChangeFunctions;
+  };
+
+  const [
+    UlsanChange1, UlsanChange2, UlsanChange3, UlsanChange4,
+    UlsanChange5
+  ] = generateUlsanChangeFunctions();
+
+  const generateIncheonChangeFunctions = () => {
+    const IncheonChangeFunctions = [];
+    for (let i = 1; i <= 10; i++) {
+      IncheonChangeFunctions.push(() => setFilter(i + 191));
+    }
+    return IncheonChangeFunctions;
+  };
+
+  const [
+    IncheonChange1, IncheonChange2, IncheonChange3, IncheonChange4,
+    IncheonChange5, IncheonChange6, IncheonChange7, IncheonChange8,
+    IncheonChange9, IncheonChange10
+  ] = generateIncheonChangeFunctions();
+
+
+  const generateJeollanamChangeFunctions = () => {
+    const JeollanamChangeFunctions = [];
+    for (let i = 1; i <= 22; i++) {
+      JeollanamChangeFunctions.push(() => setFilter(i + 201));
+    }
+    return JeollanamChangeFunctions;
+  };
+
+  const [
+    JeollanamChange1, JeollanamChange2, JeollanamChange3, JeollanamChange4,
+    JeollanamChange5, JeollanamChange6, JeollanamChange7, JeollanamChange8,
+    JeollanamChange9, JeollanamChange10, JeollanamChange11, JeollanamChange12,
+    JeollanamChange13, JeollanamChange14, JeollanamChange15, JeollanamChange16,
+    JeollanamChange17, JeollanamChange18, JeollanamChange19, JeollanamChange20,
+    JeollanamChange21, JeollanamChange22
+  ] = generateJeollanamChangeFunctions();
+
+  const generateJeollabukChangeFunctions = () => {
+    const JeollabukChangeFunctions = [];
+    for (let i = 1; i <= 15; i++) {
+      JeollabukChangeFunctions.push(() => setFilter(i + 223));
+    }
+    return JeollabukChangeFunctions;
+  };
+
+  const [
+    JeollabukChange1, JeollabukChange2, JeollabukChange3, JeollabukChange4,
+    JeollabukChange5, JeollabukChange6, JeollabukChange7, JeollabukChange8,
+    JeollabukChange9, JeollabukChange10, JeollabukChange11, JeollabukChange12,
+    JeollabukChange13, JeollabukChange14, JeollabukChange15
+  ] = generateJeollabukChangeFunctions();
+
+  const generateJejuChangeFunctions = () => {
+    const JejuChangeFunctions = [];
+    for (let i = 1; i <= 3; i++) {
+      JejuChangeFunctions.push(() => setFilter(i + 238));
+    }
+    return JejuChangeFunctions;
+  };
+
+  const [
+    JejuChange1, JejuChange2, JejuChange3
+  ] = generateJejuChangeFunctions();
+
+
+  const generateChungcheongnamChangeFunctions = () => {
+    const ChungcheongnamChangeFunctions = [];
+    for (let i = 1; i <= 16; i++) {
+      ChungcheongnamChangeFunctions.push(() => setFilter(i + 241));
+    }
+    return ChungcheongnamChangeFunctions;
+  };
+
+  const [
+    ChungcheongnamChange1, ChungcheongnamChange2, ChungcheongnamChange3, ChungcheongnamChange4,
+    ChungcheongnamChange5, ChungcheongnamChange6, ChungcheongnamChange7, ChungcheongnamChange8,
+    ChungcheongnamChange9, ChungcheongnamChange10, ChungcheongnamChange11, ChungcheongnamChange12,
+    ChungcheongnamChange13, ChungcheongnamChange14, ChungcheongnamChange15, ChungcheongnamChange16
+  ] = generateChungcheongnamChangeFunctions();
+
+
+  const generateChungcheongbukChangeFunctions = () => {
+    const ChungcheongbukChangeFunctions = [];
+    for (let i = 1; i <= 14; i++) {
+      ChungcheongbukChangeFunctions.push(() => setFilter(i + 257));
+    }
+    return ChungcheongbukChangeFunctions;
+  };
+
+  const [
+    ChungcheongbukChange1, ChungcheongbukChange2, ChungcheongbukChange3, ChungcheongbukChange4,
+    ChungcheongbukChange5, ChungcheongbukChange6, ChungcheongbukChange7, ChungcheongbukChange8,
+    ChungcheongbukChange9, ChungcheongbukChange10, ChungcheongbukChange11, ChungcheongbukChange12,
+    ChungcheongbukChange13, ChungcheongbukChange14
+  ] = generateChungcheongbukChangeFunctions();
 
 
 
@@ -301,14 +430,12 @@ export default function Filter() {
           <div className="choice-fliter">
             <div className="filtering-three">
               <div className="filtering-box-three" onClick={GangwonChange}>강원특별자치도</div>
-            <div className="filtering-three">
-              <div className="filtering-box-three" onClick={GangwonChange}>강원특별자치도</div>
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GyeonggiChange}>경기도</div>
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GyeongsangnamChange}>경상남도</div>
             </div>
-            <div className="">
+            <div className="filtering-three">
               <div className="filtering-box-three" onClick={GyeongsangbukChange}>경상북도</div>
               <div className="vertical-divider-light-gray"></div>
               <div className="filtering-box-three" onClick={GwangjuChange}>광주광역시</div>
@@ -342,7 +469,6 @@ export default function Filter() {
               <div className="filtering-box-two" onClick={ChungcheongbukChange}>충청북도</div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     )
@@ -724,16 +850,16 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three">광산구</div>
+              <div className="filtering-box-three" onClick={GwangjuChange1}>광산구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">남구</div>
+              <div className="filtering-box-three" onClick={GwangjuChange2}>남구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">동구</div>
+              <div className="filtering-box-three" onClick={GwangjuChange3}>동구</div>
             </div>
             <div className="filtering-two">
-              <div className="filtering-box-two">북구</div>
+              <div className="filtering-box-two" onClick={GwangjuChange4}>북구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two">서구</div>
+              <div className="filtering-box-two" onClick={GwangjuChange5}>서구</div>
             </div>
           </div>
         </div>
@@ -810,16 +936,16 @@ export default function Filter() {
             <div className="dong">읍/면/동</div>
           </div>
             <div className="filtering-three">
-              <div className="filtering-box-three">대덕구</div>
+              <div className="filtering-box-three" onClick={DaejeonChange1}>대덕구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">동구</div>
+              <div className="filtering-box-three" onClick={DaejeonChange2}>동구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">서구</div>
+              <div className="filtering-box-three" onClick={DaejeonChange3}>서구</div>
             </div>
             <div className="filtering-two">
-              <div className="filtering-box-two">유성구</div>
+              <div className="filtering-box-two" onClick={DaejeonChange4}>유성구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two">충청북도</div>
+              <div className="filtering-box-two" onClick={DaejeonChange5}>충청북도</div>
             </div>
           </div>
         </div>
@@ -848,42 +974,42 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three">강서구</div>
+              <div className="filtering-box-three" onClick={BusanChange1}>강서구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">금정구</div>
+              <div className="filtering-box-three" onClick={BusanChange2}>금정구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">기장군</div>
+              <div className="filtering-box-three" onClick={BusanChange3}>기장군</div>
             </div>
             <div className="filtering-three">
-              <div className="filtering-box-three">남구</div>
+              <div className="filtering-box-three" onClick={BusanChange4}>남구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">동구</div>
+              <div className="filtering-box-three" onClick={BusanChange5}>동구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">동래구</div>
+              <div className="filtering-box-three" onClick={BusanChange6}>동래구</div>
             </div>
             <div className="filtering-three">
-              <div className="filtering-box-three">부산진구</div>
+              <div className="filtering-box-three" onClick={BusanChange7}>부산진구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">북구</div>
+              <div className="filtering-box-three" onClick={BusanChange8}>북구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">사상구</div>
+              <div className="filtering-box-three" onClick={BusanChange9}>사상구</div>
             </div>
             <div className="filtering-three">
-              <div className="filtering-box-three">사하구</div>
+              <div className="filtering-box-three" onClick={BusanChange10}>사하구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">서구</div>
+              <div className="filtering-box-three" onClick={BusanChange11}>서구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">수영구</div>
+              <div className="filtering-box-three" onClick={BusanChange12}>수영구</div>
             </div>
             <div className="filtering-three">
-              <div className="filtering-box-three">연제구</div>
+              <div className="filtering-box-three" onClick={BusanChange13}>연제구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">영도구</div>
+              <div className="filtering-box-three" onClick={BusanChange14}>영도구</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three">중구</div>
+              <div className="filtering-box-three" onClick={BusanChange15}>중구</div>
             </div>
             <div className="filtering-one">
-              <div className="filtering-box-one">해운대구</div>
+              <div className="filtering-box-one" onClick={BusanChange16}>해운대구</div>
             </div>
           </div>
         </div>
@@ -7726,19 +7852,53 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>도산동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="filtering-box-three" onClick={handleClick}>동곡동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>본량동</div>
             </div>
-            <div className="filtering-two">
-              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>비아동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+              <div className="filtering-box-three" onClick={handleClick}>삼도동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송정1동</div>
             </div>
-            <div className="filtering-one">
-              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>송정2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수완동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신가동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신창동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신흥동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>어룡동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>우산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>운남동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월곡1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>월곡2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>임곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>첨단1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>첨단2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>하남동</div>
             </div>
             <div className="Gap"></div>
             <div className="Check">
@@ -7767,19 +7927,44 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>대촌동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="filtering-box-three" onClick={handleClick}>방림1동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>방림2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>백운1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>백운2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉선1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>봉선2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>사직동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송암동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>양림동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월산4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월산5동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>월산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>주월1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>주월2동</div>
             </div>
             <div className="filtering-two">
-              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="filtering-box-two" onClick={handleClick}>진월동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
-            </div>
-            <div className="filtering-one">
-              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+              <div className="filtering-box-two" onClick={handleClick}>호덕동</div>
             </div>
             <div className="Gap"></div>
             <div className="Check">
@@ -7808,19 +7993,35 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>계림1동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="filtering-box-three" onClick={handleClick}>계림2동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>동명동</div>
             </div>
-            <div className="filtering-two">
-              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>산수1동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+              <div className="filtering-box-three" onClick={handleClick}>산수2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서남동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>지산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>지산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>지원1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>지원2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>충장동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>학동</div>
             </div>
             <div className="filtering-one">
-              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+              <div className="filtering-box-one" onClick={handleClick}>학운동</div>
             </div>
             <div className="Gap"></div>
             <div className="Check">
@@ -7849,19 +8050,70 @@ export default function Filter() {
           </div>
           <div className="choice-fliter">
             <div className="filtering-three">
-              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>건국동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="filtering-box-three" onClick={handleClick}>동림동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+              <div className="filtering-box-three" onClick={handleClick}>두암1동</div>
             </div>
-            <div className="filtering-two">
-              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>두암2동</div>
               <div className="vertical-divider-light-gray"></div>
-              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+              <div className="filtering-box-three" onClick={handleClick}>두암3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>매곡동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>문화동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문흥1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문흥2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>삼각동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>석곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신안동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신용동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>양산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>오치1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>오치2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용봉동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>우산동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>운암1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>운암2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>운암3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>일곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>임동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중앙동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>중흥1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중흥2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중흥3동</div>
             </div>
             <div className="filtering-one">
-              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+              <div className="filtering-box-one" onClick={handleClick}>풍향동</div>
             </div>
             <div className="Gap"></div>
             <div className="Check">
@@ -7885,6 +8137,256 @@ export default function Filter() {
             <div className="si-complete" onClick={filterChange}>광주광역시</div>
             <div className="vertical-divider-dark-gray"></div>
             <div className="gun-complete" onClick={GwangjuChange}>서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>광천동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>금호1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>금호2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>농성1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>농성2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동천동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상무1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상무2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서창동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>양3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>양동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>유덕동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>치평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>풍암동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화정1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>화정2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화정3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화정4동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const DaeguFilter1 = () => {
+    return (
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>군위읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부계면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>산성면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>삼국유사면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>소보면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>우보면</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>의흥면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>효령면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const DaeguFilter2 = () => {
+    return (
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>남구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대명10동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명11동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대명2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대명5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명6동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대명9동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>봉덕1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉덕2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉덕3동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>이천동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const DaeguFilter3 = () => {
+    return (
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>달서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감삼동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>두류1,2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>두류3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>본동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>본리동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상인1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상인2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상인3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>성당동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송현1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송현2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신당동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용산2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>월성1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월성2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>유천동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>이곡1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>이곡2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장기동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>죽전동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>진천동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  const DaeguFilter4 = () => {
+    return (
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>달성군</div>
             <div className="vertical-divider-dark-gray"></div>
             <div className="dong-chenk">읍/면/동</div>
           </div>
@@ -7914,346 +8416,3000 @@ export default function Filter() {
     )
   }
 
-  const DaeguFilter1 = () => {
-    return (
-      <></>
-    )
-  }
-
-  const DaeguFilter2 = () => {
-    return (
-      <></>
-    )
-  }
-
-  const DaeguFilter3 = () => {
-    return (
-      <></>
-    )
-  }
-
-  const DaeguFilter4 = () => {
-    return (
-      <></>
-    )
-  }
-
   const DaeguFilter5 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>동구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>공산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동촌동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>방촌동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>볼로,봉무동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신암1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신암2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신암3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신암4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신암5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신천1,2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신천3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신천4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>안심1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>안심2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>안심3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>안심4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>지저동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>해안동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>혁신동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>효목1동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>효목2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaeguFilter6 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>북구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>검단동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>관문동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>관음동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구암동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>국우동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>노원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대현동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동천동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>무태조야동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>북현1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>복현2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>산격1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>산격2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>산격3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>산격4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>읍내동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>칠성동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>침산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>침산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>침산3동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>태전1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>태전2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaeguFilter7 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>내당1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>내당2,3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>내당4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>비산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>비산2,3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>비산4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>비산5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>비산6동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>비산7동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상중이동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>원대동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>평리1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>평리2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>평리3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>평리4동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>평리5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>평리6동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaeguFilter8 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>수성구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>고산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고산3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>두산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>만촌1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>만촌2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>만촌3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범물1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범물2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>범어1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범어2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범어3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>범어4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수성1가동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>수성2,3가동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수성4가동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>지산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>지산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>파동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황금1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황금2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaeguFilter9 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대구광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>중구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남산3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남산4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대봉1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대봉2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대신동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동인동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼덕동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>성내1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>성내2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>성내3동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
   
 
   const DaejeonFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대전광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>대덕구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대화동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>덕암동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>목상동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>법1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>법2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>비래동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>석봉동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송촌동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신탄진동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>오정동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중리동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>회덕동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaejeonFilter2 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대전광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>동구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가양1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가양2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대청동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>산내동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼성동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>성남동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신인동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용운동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>용전동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>자양동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중앙동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>판암1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>판암2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>홍도동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>효동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaejeonFilter3 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대전광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가수원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가장동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>갈마1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>갈마2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>관저1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>관저2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>괴정동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>기성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>내동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>도마1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도마2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도안동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>둔산1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>둔산2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>둔산3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>만년동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>번동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>복수동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>용문동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월평1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월평2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>월평3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>정림동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>탄방동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaejeonFilter4 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대전광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>관평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구즉동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>노은1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>노은2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>노은3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상대동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>온천1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>온천2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>원신흥동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>전민동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>진잠동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>학하동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const DaejeonFilter5 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>대전광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대사동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대흥동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>목동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>문창동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문화1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문화2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>부사동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>산성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>석교동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>오류동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용두동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>유천1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>유천2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>은행선화동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중촌동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>태평1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>태평2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>강서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가덕도동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가락동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>녹산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대저1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대저2동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>명지1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>명지2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter2 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>금정구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구서제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구서제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>금사회동동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>금성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부곡제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>부곡제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부곡제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부곡제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>서제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>선두구동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장전제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장전제2동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>청룡노포동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter3 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>기장군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>기장읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>일광읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장안읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>정관읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>철마면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter4 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>남구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감만제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>감만제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대연제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대연제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대연제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대연제5동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대연제6동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문현제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문현제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>문현제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>문현제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용당동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>용호제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용호제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용호제3동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>용호제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>우암동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter5 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>동구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>범일제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범일제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범일제5동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>수정제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수정제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수정제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>수정제5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>좌천동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>초량제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>초량제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>초량제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>초량제6동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter6 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>동래구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>명륜동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>명장제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>명장제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>복산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>사직제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>사직제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>사직제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수민동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>안락제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>안락제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>온천제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>온천제2동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>온천제3동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter7 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>부산진구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가야제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가야제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개금제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>개금제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개금제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>당감제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>당감제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>당감제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>범천제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>범천제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부암제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부암제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>부전제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부전제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>양정제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>양정제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연지동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>전포제1동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>전포제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>초읍동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter8 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>북구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구포제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구포제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구포제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>금곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>덕천제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>덕천제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>덕천제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>만덕제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>만덕제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>만덕제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화명제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화명제2동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>화명제3동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter9 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>사상구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감전동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>괘법동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>덕포제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>덕포제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>모라제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>모라제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>삼락동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>엄궁동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>주례제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>주례제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>주례제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>학장동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter10 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>사하구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감천제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>감천제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>괴정제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>괴정제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>괴정제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>괴정제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>다대제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>다대제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>당리동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신평제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신평제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>장림제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장림제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>하단제1동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>하단제2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter11 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남부민제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남부민제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동대신제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>동대신제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동대신제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부민동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>서대신제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서대신제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서대신제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>아미동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>암남동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>초장동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>충무동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter12 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>수영구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>광안제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>광안제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>광안제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>광안제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남천제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남천제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>망미제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>망미제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>민락동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>수영동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter13 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>연제구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>거제제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>거제제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>거제제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>거제제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>연산제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제5동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>연산제6동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제8동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연산제9동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter14 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>영도구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남향동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동삼제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동삼제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>동삼제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉래제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉래제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신선동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>영선제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>영선제2동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>청학제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>청학제2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter15 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>중구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>광복동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>남포동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대청동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>동광동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>보수동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부평동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>영주제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>영주제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중앙동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const BusanFilter16 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>부산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>해운대구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>반송제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>반송제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>반여제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>반여제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>반여제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>반여제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>송정동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>우제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>우제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>우제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>재송제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>재송제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>좌제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>좌제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>좌제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>좌제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중제2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>강남구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>개포1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개포2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개포3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>개포4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>논현1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>논현2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대치1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대치2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대치4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>도곡1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도곡2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼성1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>삼성2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>세곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수서동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신사동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>압구정동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>역삼1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>역삼2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>일월1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>일원본동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>청담동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter2 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>강동구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>강일동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고덕제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고덕제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>길동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>둔촌제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>둔촌제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>명일제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>명일제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상일제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상일제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>성내제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>성내제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>성내제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>암사제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>암사제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>암사제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>천호제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>천호제2동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>천호제3동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter3 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>강북구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>미아동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>번1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>번2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>번3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼각산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼양동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>송중동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송천동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수유1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>수유2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수유3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>우이동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>인수동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter4 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>강서구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가양제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가양제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>가양제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>공항동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>등촌제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>등촌제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>등촌제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>발산제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>방화제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>방화제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>방화제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>염창동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>우장산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화곡본동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화곡제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>화곡제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화곡제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화곡제4동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>화곡제6동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>화곡제8동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter5 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>관악구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>낙성대동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>난곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>난향동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남현동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대학동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>미성동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>보라매동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서림동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>서원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>성현동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신림동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신사동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>신원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>은천동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>인헌동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>조원동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중앙동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>청룡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>청림동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>행운동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter6 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>광진구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>광장동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구의제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구의제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구의제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>군자동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>능동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>자양제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>자양제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>자양제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>자양제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중곡제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중곡제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>중곡제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중곡제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>화양동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter7 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>구로구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가리봉동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개봉제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>개봉제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>개봉제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고척제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>고척제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구로제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구로제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구로제3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>구로제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구로제5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>수궁동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>신도림동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>오류제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>오류제2동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>항동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter8 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>금천구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>가산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>독산제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>독산제2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>독산제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>독산제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>시흥제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>시흥제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>시흥제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>시흥제4동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>시흥제5동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter9 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>노원구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>공릉1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>공릉2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상계10동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상계1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상계2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상계3,4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상계5동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상계6,7동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>상계8동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>상계9동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월계1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>월계2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>월계3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중게1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중계2,3동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>중계4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중계본동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>하계1동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>하계2동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter10 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>도봉구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>도봉제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도봉제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>방학제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>방학제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>방학제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>쌍문제1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>쌍문제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>쌍문제3동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>쌍문제4동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>창제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>창제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>창제3동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>창제4동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>창제5동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter11 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>동대문구</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>답십리제1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>답십리제2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용신동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter12 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter13 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter14 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter15 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter16 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter17 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter18 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter19 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter20 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter21 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter22 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter23 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter24 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SeoulFilter25 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>서울특별시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const SejongFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>세종특별자치시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>세종특별자치시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>고운동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>금남면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>나성동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>다정동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대평동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>도담동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>반곡동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>보람동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>부강면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>새롬동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>소담동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>소정면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>아름동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>어진동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연기면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>연동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연서면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>장군면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>전동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>전의면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>조치원읍</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>종촌동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>한솔동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>해밀동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const UlsanFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>울산광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8283,7 +11439,42 @@ export default function Filter() {
 
   const IncheonFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>인천광역시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8352,7 +11543,42 @@ export default function Filter() {
 
   const JeollanamFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>전라남도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8484,7 +11710,42 @@ export default function Filter() {
 
   const JeollabukFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>전라북도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8574,25 +11835,224 @@ export default function Filter() {
 
   const JejuFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>제주특별자치도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>서귀포시</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>남원읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대륜동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>대정읍/마라도포함</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>대천동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>동홍동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>서홍동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>성산읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>송산동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>안덕면</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>영천동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>예래동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>정방동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>중문동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>중앙동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>천지동</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>표선면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>효돈동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const JejuFilter2 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>제주특별자치도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>이어도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">\
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>이어도</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const JejuFilter3 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>제주특별자치도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>건입동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>구좌읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>노형동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>도두동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>봉개동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼도1동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>삼도2동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>삼양동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>아라동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>애월읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>연동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>오라동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>외도동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용담1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>용담2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>우도면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>이도1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>이도2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>이호동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>일도1동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>일도2동</div>
+            </div>
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>조천읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>추자면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>한경면</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>한림읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>화북동</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
   const ChungcheongnamFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>충청남도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8688,7 +12148,42 @@ export default function Filter() {
 
   const ChungcheongbukFilter1 = () => {
     return (
-      <></>
+      <div className="background">
+        <div className="filter">
+          <div className="find-choice-button">
+            <div className="choice-left-button" onClick={filterRestore}>위치 등록후 게시물 찾기</div>
+            <div className="choice-right-button" onClick={onChoiceButtonClickHandler}>내 주변 사람 게시물 찾기</div>
+          </div>
+          <div className="si-gun-dong">
+            <div className="si-complete" onClick={filterChange}>충청북도</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="gun-complete" onClick={GwangjuChange}>근위군</div>
+            <div className="vertical-divider-dark-gray"></div>
+            <div className="dong-chenk">읍/면/동</div>
+          </div>
+          <div className="choice-fliter">
+            <div className="filtering-three">
+              <div className="filtering-box-three" onClick={handleClick}>감포읍</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>강동면</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-three" onClick={handleClick}>건천읍</div>
+            </div>
+            <div className="filtering-two">
+              <div className="filtering-box-two" onClick={handleClick}>황성동</div>
+              <div className="vertical-divider-light-gray"></div>
+              <div className="filtering-box-two" onClick={handleClick}>황오동</div>
+            </div>
+            <div className="filtering-one">
+              <div className="filtering-box-one" onClick={handleClick}>함안면</div>
+            </div>
+            <div className="Gap"></div>
+            <div className="Check">
+              <div className={`Checkbutton ${isClicked ? 'Checkbutton-clicked' : ''}`} onClick={onCheckButtonClickHandler}>확인</div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 
@@ -8974,74 +12469,75 @@ export default function Filter() {
       filter === 200 ? (<IncheonFilter9 />) :
       filter === 201 ? (<IncheonFilter10 />) :
       filter === 202 ? (<JeollanamFilter1 />) :
-      filter === 202 ? (<JeollanamFilter2 />) :
-      filter === 202 ? (<JeollanamFilter3 />) :
-      filter === 202 ? (<JeollanamFilter4 />) :
-      filter === 202 ? (<JeollanamFilter5 />) :
-      filter === 202 ? (<JeollanamFilter6 />) :
-      filter === 202 ? (<JeollanamFilter7 />) :
-      filter === 202 ? (<JeollanamFilter8 />) :
-      filter === 202 ? (<JeollanamFilter9 />) :
-      filter === 202 ? (<JeollanamFilter10 />) :
-      filter === 202 ? (<JeollanamFilter11 />) :
-      filter === 202 ? (<JeollanamFilter12 />) :
-      filter === 202 ? (<JeollanamFilter13 />) :
-      filter === 202 ? (<JeollanamFilter14 />) :
-      filter === 202 ? (<JeollanamFilter15 />) :
-      filter === 202 ? (<JeollanamFilter16 />) :
-      filter === 202 ? (<JeollanamFilter17 />) :
-      filter === 202 ? (<JeollanamFilter18 />) :
-      filter === 202 ? (<JeollanamFilter19 />) :
-      filter === 202 ? (<JeollanamFilter20 />) :
-      filter === 202 ? (<JeollanamFilter21 />) :
-      filter === 202 ? (<JeollanamFilter22 />) :
-      filter === 203 ? (<JeollabukFilter1 />) :
-      filter === 203 ? (<JeollabukFilter2 />) :
-      filter === 203 ? (<JeollabukFilter3 />) :
-      filter === 203 ? (<JeollabukFilter4 />) :
-      filter === 203 ? (<JeollabukFilter5 />) :
-      filter === 203 ? (<JeollabukFilter6 />) :
-      filter === 203 ? (<JeollabukFilter7 />) :
-      filter === 203 ? (<JeollabukFilter8 />) :
-      filter === 203 ? (<JeollabukFilter9 />) :
-      filter === 203 ? (<JeollabukFilter10 />) :
-      filter === 203 ? (<JeollabukFilter11 />) :
-      filter === 203 ? (<JeollabukFilter12 />) :
-      filter === 203 ? (<JeollabukFilter13 />) :
-      filter === 203 ? (<JeollabukFilter14 />) :
-      filter === 203 ? (<JeollabukFilter15 />) :
-      filter === 204 ? (<JejuFilter1 />) :
-      filter === 204 ? (<JejuFilter2 />) :
-      filter === 204 ? (<JejuFilter3 />) :
-      filter === 204 ? (<ChungcheongnamFilter1 />) :
-      filter === 204 ? (<ChungcheongnamFilter2 />) :
-      filter === 204 ? (<ChungcheongnamFilter3 />) :
-      filter === 204 ? (<ChungcheongnamFilter4 />) :
-      filter === 204 ? (<ChungcheongnamFilter5 />) :
-      filter === 204 ? (<ChungcheongnamFilter6 />) :
-      filter === 204 ? (<ChungcheongnamFilter7 />) :
-      filter === 204 ? (<ChungcheongnamFilter8 />) :
-      filter === 204 ? (<ChungcheongnamFilter9 />) :
-      filter === 204 ? (<ChungcheongnamFilter11 />) :
-      filter === 204 ? (<ChungcheongnamFilter12 />) :
-      filter === 204 ? (<ChungcheongnamFilter13 />) :
-      filter === 204 ? (<ChungcheongnamFilter14 />) :
-      filter === 204 ? (<ChungcheongnamFilter15 />) :
-      filter === 204 ? (<ChungcheongnamFilter16 />) :
-      filter === 204 ? (<ChungcheongbukFilter1 />) :
-      filter === 204 ? (<ChungcheongbukFilter2 />) :
-      filter === 204 ? (<ChungcheongbukFilter3 />) :
-      filter === 204 ? (<ChungcheongbukFilter4 />) :
-      filter === 204 ? (<ChungcheongbukFilter5 />) :
-      filter === 204 ? (<ChungcheongbukFilter6 />) :
-      filter === 204 ? (<ChungcheongbukFilter7 />) :
-      filter === 204 ? (<ChungcheongbukFilter8 />) :
-      filter === 204 ? (<ChungcheongbukFilter9 />) :
-      filter === 204 ? (<ChungcheongbukFilter10 />) :
-      filter === 204 ? (<ChungcheongbukFilter11 />) :
-      filter === 204 ? (<ChungcheongbukFilter12 />) :
-      filter === 204 ? (<ChungcheongbukFilter13 />) :
-      filter === 204 ? (<ChungcheongbukFilter14 />) :
+      filter === 203 ? (<JeollanamFilter2 />) :
+      filter === 204 ? (<JeollanamFilter3 />) :
+      filter === 205 ? (<JeollanamFilter4 />) :
+      filter === 206 ? (<JeollanamFilter5 />) :
+      filter === 207 ? (<JeollanamFilter6 />) :
+      filter === 208 ? (<JeollanamFilter7 />) :
+      filter === 209 ? (<JeollanamFilter8 />) :
+      filter === 210 ? (<JeollanamFilter9 />) :
+      filter === 211 ? (<JeollanamFilter10 />) :
+      filter === 212 ? (<JeollanamFilter11 />) :
+      filter === 213 ? (<JeollanamFilter12 />) :
+      filter === 214 ? (<JeollanamFilter13 />) :
+      filter === 215 ? (<JeollanamFilter14 />) :
+      filter === 216 ? (<JeollanamFilter15 />) :
+      filter === 217 ? (<JeollanamFilter16 />) :
+      filter === 218 ? (<JeollanamFilter17 />) :
+      filter === 219 ? (<JeollanamFilter18 />) :
+      filter === 220 ? (<JeollanamFilter19 />) :
+      filter === 221 ? (<JeollanamFilter20 />) :
+      filter === 222 ? (<JeollanamFilter21 />) :
+      filter === 223 ? (<JeollanamFilter22 />) :
+      filter === 224 ? (<JeollabukFilter1 />) :
+      filter === 225 ? (<JeollabukFilter2 />) :
+      filter === 226 ? (<JeollabukFilter3 />) :
+      filter === 227 ? (<JeollabukFilter4 />) :
+      filter === 228 ? (<JeollabukFilter5 />) :
+      filter === 229 ? (<JeollabukFilter6 />) :
+      filter === 230 ? (<JeollabukFilter7 />) :
+      filter === 231 ? (<JeollabukFilter8 />) :
+      filter === 232 ? (<JeollabukFilter9 />) :
+      filter === 233 ? (<JeollabukFilter10 />) :
+      filter === 234 ? (<JeollabukFilter11 />) :
+      filter === 235 ? (<JeollabukFilter12 />) :
+      filter === 236 ? (<JeollabukFilter13 />) :
+      filter === 237 ? (<JeollabukFilter14 />) :
+      filter === 238 ? (<JeollabukFilter15 />) :
+      filter === 239 ? (<JejuFilter1 />) :
+      filter === 240 ? (<JejuFilter2 />) :
+      filter === 241 ? (<JejuFilter3 />) :
+      filter === 242 ? (<ChungcheongnamFilter1 />) :
+      filter === 243 ? (<ChungcheongnamFilter2 />) :
+      filter === 244 ? (<ChungcheongnamFilter3 />) :
+      filter === 245 ? (<ChungcheongnamFilter4 />) :
+      filter === 246 ? (<ChungcheongnamFilter5 />) :
+      filter === 247 ? (<ChungcheongnamFilter6 />) :
+      filter === 248 ? (<ChungcheongnamFilter7 />) :
+      filter === 249 ? (<ChungcheongnamFilter8 />) :
+      filter === 250 ? (<ChungcheongnamFilter9 />) :
+      filter === 251 ? (<ChungcheongnamFilter10 />) :
+      filter === 252 ? (<ChungcheongnamFilter11 />) :
+      filter === 253 ? (<ChungcheongnamFilter12 />) :
+      filter === 254 ? (<ChungcheongnamFilter13 />) :
+      filter === 255 ? (<ChungcheongnamFilter14 />) :
+      filter === 256 ? (<ChungcheongnamFilter15 />) :
+      filter === 257 ? (<ChungcheongnamFilter16 />) :
+      filter === 258 ? (<ChungcheongbukFilter1 />) :
+      filter === 259 ? (<ChungcheongbukFilter2 />) :
+      filter === 260 ? (<ChungcheongbukFilter3 />) :
+      filter === 261 ? (<ChungcheongbukFilter4 />) :
+      filter === 262 ? (<ChungcheongbukFilter5 />) :
+      filter === 263 ? (<ChungcheongbukFilter6 />) :
+      filter === 264 ? (<ChungcheongbukFilter7 />) :
+      filter === 265 ? (<ChungcheongbukFilter8 />) :
+      filter === 266 ? (<ChungcheongbukFilter9 />) :
+      filter === 267 ? (<ChungcheongbukFilter10 />) :
+      filter === 268 ? (<ChungcheongbukFilter11 />) :
+      filter === 269 ? (<ChungcheongbukFilter12 />) :
+      filter === 270 ? (<ChungcheongbukFilter13 />) :
+      filter === 271 ? (<ChungcheongbukFilter14 />) :
       (<></>)
       }
     </>
