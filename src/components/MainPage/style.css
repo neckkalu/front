@@ -41,6 +41,15 @@
 
 }
 
+.FTFBoardExplanation {
+  color: #000;
+  font-family: Inter;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px; /* 100% */
+}
+
 .Board {
   width: 50%;
   height: 480px;
