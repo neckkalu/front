@@ -297,41 +297,6 @@ export default function Authentication() {
         </div>
       </div>
     )
-
-    // return (
-    //   <div className='auth-card'>
-    //     <div className='auth-card-top'>
-    //       <div className='auth-card-top-text-container'>
-    //         <div className='auth-card-top-text'>회원가입</div>
-    //         <div className='auth-card-top-text-opacity'>{`${page}/2`}</div>
-    //       </div>
-    //       <div className='auth-card-top-input-container'>
-    //         {page === 1 ? (
-    //           <>
-    //             <InputBox label='이메일 주소*' type='text' placeholder='이메일 주소를 입력해주세요.' error={emailPatternError || emailDuplicationError} helper={emailPatternError ? '이메일 주소 포맷이 맞지않습니다.' : emailDuplicationError ? '중복되는 이메일 주소입니다.' : '' } value={email} setValue={setEmail} />
-    //             <InputBox label='비밀번호*' type={showPassword ? 'text' : 'password'} placeholder='비밀번호를 입력해주세요.' icon={showPassword ? INPUT_ICON.ON : INPUT_ICON.OFF} buttonHandler={onPasswordIconClickHandler} error={passwordError} helper={passwordError ? '비밀번호는 8자 이상 입력해주세요.' : ''} value={password} setValue={setPassword} />
-    //             <InputBox label='비밀번호 확인*' type={showPasswordCheck ? 'text' : 'password'} placeholder='비밀번호를 다시 입력해주세요.' icon={showPasswordCheck ? INPUT_ICON.ON : INPUT_ICON.OFF} buttonHandler={onPasswordCheckIconClickHandler} error={passwordCheckError} helper={passwordCheckError ? '비밀번호가 일치하지않습니다.' : ''} value={passwordCheck} setValue={setPasswordCheck} />
-    //           </>
-    //         ) : (
-    //           <>
-    //             <InputBox label='닉네임*' type='text' placeholder='닉네임을 입력해주세요.' error={nicknameError || nicknameDuplicationError} helper={nicknameError ? '닉네임을 입력해주세요.' : nicknameDuplicationError ? '중복되는 닉네임입니다.' : ''} value={nickname} setValue={setNickname} />
-    //             <InputBox label='핸드폰 번호*' type='text' placeholder='핸드폰 번호를 입력해주세요.' error={telNumberError || telNumberDuplicationError} helper={telNumberError ? '숫자만 입력해주세요.' : telNumberDuplicationError ? '중복되는 휴대전화번호입니다.' : ''} value={telNumber} setValue={setTelNumber} />
-    //             <InputBox label='주소*' type='text' placeholder='우편번호 찾기' icon={INPUT_ICON.ARROW} error={addressError} helper={addressError ? '우편번호를 선택해주세요.' : ''} value={address} setValue={setAddress} buttonHandler={onAddressIconClickHandler} />
-    //             <InputBox label='상세 주소*' type='text' placeholder='상세 주소를 입력해주세요.' value={addressDetail} setValue={setAddressDetail} />
-    //           </>
-    //         )}
-    //       </div>
-    //     </div>
-    //     <div className='auth-card-bottom'>
-    //       <div className='auth-card-bottom-button' onClick={onButtonClickHandler}>
-    //         { page === 1 ? '다음 단계' : '회원가입' }
-    //       </div>
-    //       <div className='auth-card-bottom-text'>
-    //         이미 계정이 있으신가요? <span className='auth-emphasis' onClick={onSignInClickHandler}>로그인</span>
-    //       </div>
-    //     </div>
-    //   </div>
-    // )
   }
 
   return (
