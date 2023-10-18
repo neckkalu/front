@@ -10,7 +10,7 @@ import { INPUT_ICON, MAIN_PATH, emailPattern, telNumberPattern } from "constant"
 import SignInResponseDto from "interface/response/auth/SignInResponseDto";
 import SignInRequestDto from "interface/request/auth/SignInRequestDto";
 import { signInMock, userMock } from "mocks";
-import { signInRequest, signUpRequest } from "interface";
+import { signInRequest, signUpRequest } from "apis";
 import { useUserStore } from "stores";
 import SignUpRequestDto from "interface/request/auth/SignUpRequestDto";
 
