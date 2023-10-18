@@ -1,4 +1,4 @@
-import ResponseDto from "interface/response/Response.dto";
+import ResponseDto from "../Response.dto";
 
 export default interface GetLoginUserResponseDto extends ResponseDto {
   email: string;
