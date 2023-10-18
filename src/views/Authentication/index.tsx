@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import { useDaumPostcodePopup, Address } from 'react-daum-postcode';
 
+import axios from "axios";
 import { useUserStore } from "stores";
 import SignUpRequestDto from "interface/request/auth/SignUpRequestDto";
 import SignInRequestDto from "interface/request/auth/SignInRequestDto";
