@@ -4,15 +4,15 @@ import { useCookies } from 'react-cookie';
 import { useDaumPostcodePopup, Address } from 'react-daum-postcode';
 
 import InputBox from "components/InputBox";
-import ResponseDto from "apis/response/Response.dto";
+import ResponseDto from "interface/response/Response.dto";
 import { useNavigate } from "react-router-dom";
 import { INPUT_ICON, MAIN_PATH, emailPattern, telNumberPattern } from "constant";
-import SignInResponseDto from "interface/response/SignInResponseDto";
-import SignInRequestDto from "interface/request/SignInRequestDto";
+import SignInResponseDto from "interface/response/auth/SignInResponseDto";
+import SignInRequestDto from "interface/request/auth/SignInRequestDto";
 import { signInMock, userMock } from "mocks";
-import { signInRequest, signUpRequest } from "apis";
+import { signInRequest, signUpRequest } from "interface";
 import { useUserStore } from "stores";
-import SignUpRequestDto from "interface/request/SignUpRequestDto";
+import SignUpRequestDto from "interface/request/auth/SignUpRequestDto";
 
 //     component: 인증화면 컴포넌트      //
 export default function Authentication() {
