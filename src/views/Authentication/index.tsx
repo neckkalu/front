@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import './style.css';
+import { useNavigate } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import { useDaumPostcodePopup, Address } from 'react-daum-postcode';
 
-import InputBox from "components/InputBox";
-import ResponseDto from "interface/response/Response.dto";
-import { useNavigate } from "react-router-dom";
-import { INPUT_ICON, MAIN_PATH, emailPattern, telNumberPattern } from "constant";
-import SignInResponseDto from "interface/response/auth/SignInResponseDto";
-import SignInRequestDto from "interface/request/auth/SignInRequestDto";
-import { signInMock, userMock } from "mocks";
-import { signInRequest, signUpRequest } from "apis";
 import { useUserStore } from "stores";
 import SignUpRequestDto from "interface/request/auth/SignUpRequestDto";
+import SignInRequestDto from "interface/request/auth/SignInRequestDto";
+import InputBox from "components/InputBox";
+import { signInMock, userMock } from "mocks";
+import { INPUT_ICON, MAIN_PATH, emailPattern, telNumberPattern } from "constant";
+import {getSignInUserRequest, signInRequest, signUpRequest } from "apis";
+
+import './style.css';
+import SignInResponseDto from "interface/response/auth/SignInResponseDto";
+import ResponseDto from "interface/response/Response.dto";
+import { GetLoginUserResponseDto } from "interface/response/user";
+
+
 
 //     component: 인증화면 컴포넌트      //
 export default function Authentication() {
@@ -250,7 +254,7 @@ export default function Authentication() {
     }
     // description: 주소 검색 완료 이벤트 //
     const onComplete = (data: Address) => {
-      const address = data.address;
+      const address = data.jibunAddress;
       setAddress(address);
     }
 
