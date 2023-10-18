@@ -1,3 +1,9 @@
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-1px); }
+  20%, 40%, 60%, 80% { transform: translateX(1px); }
+}
+
 .SelectBox {
   width: 100%;
   height: 480px;
@@ -22,12 +28,16 @@
 
   cursor: pointer;
 
+  transition: background-color 0.3s ease;
+
 
   background: rgba(217, 217, 217, 1);
 }
 
-.FTFBoard.hover {
-    background-position: right;
+.FTFBoard:hover {
+  background-color: rgba(24, 96, 250, 0.6);
+  animation: shake 0.2s;
+  transition: 0.3s;
 }
 
 .FTFBoardName {
@@ -41,10 +51,10 @@
 
 }
 
-.FTFBoardExplanation {
+.FTFBoardName-Explanation {
   color: #000;
   font-family: Inter;
-  font-size: 96px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 500;
   line-height: 96px; /* 100% */
@@ -56,15 +66,21 @@
   flex-shrink: 0;
   float: right;
   outline: 1px solid #000000;
+  background: rgba(217, 217, 217, 1);
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   cursor: pointer;
+  transition: background-color 0.3s ease;
 
 
-  background: rgba(217, 217, 217, 1);
+}
+
+.Board:hover {
+  background-color: rgba(24, 96, 250, 0.6);
+  transition: 0.3s;
 }
 
 .BoardName {
@@ -77,3 +93,13 @@
 
   
 }
+
+.BoardName-Explanation {
+  color: #000;
+  font-family: Inter;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 96px; /* 100% */
+}
+
