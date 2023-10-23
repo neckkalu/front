@@ -17,6 +17,8 @@ import FTFBoardDetail from 'views/FaceTofaceboard/Detail';
 import FTFBoardUpdate from 'views/FaceTofaceboard/Update';
 import FTFBoardWrite from 'views/FaceTofaceboard/Write';
 import { MAIN_PATH, AUTH_PATH, FILTER_PATH, USER_PATH, FTFBOARD_PATH, FTFBOARD_WRITE_PATH, FTFBOARD_DETAIL_PATH, FTFBOARD_UPDATE_PATH, BOARD_WRITE_PATH, BOARD_DETAIL_PATH, BOARD_UPDATE_PATH, BOARD_PATH  } from 'constant';
+import FTFBoard from 'views/FaceTofaceboard/Search';
+import Board from 'views/Board/Search';
 
 
 function App() {
@@ -44,13 +46,12 @@ function App() {
       <Route path={MAIN_PATH()} element={<Main />} />
       <Route path={AUTH_PATH()} element={<Authentication />} />
       <Route path={FILTER_PATH()} element={<Filter />} />
-      <Route path={USER_PATH(':userEmail')} element={<User />} />
-      <Route path={FTFBOARD_PATH()}>
+      <Route path={FTFBOARD_PATH()} element={<Board />}>
         <Route path={FTFBOARD_WRITE_PATH()} element={<FTFBoardWrite />} />
         <Route path={FTFBOARD_DETAIL_PATH(':BoardNumber')} element={<FTFBoardDetail />} />
         <Route path={FTFBOARD_UPDATE_PATH(':BoardNumber')} element={<FTFBoardUpdate />} />
       </Route>
-      <Route path={BOARD_PATH()}>
+      <Route path={BOARD_PATH()} element={<FTFBoard />}>
         <Route path={BOARD_WRITE_PATH()} element={<BoardWrite />} />
         <Route path={BOARD_DETAIL_PATH(':BoardNumber')} element={<BoardDetail />} />
         <Route path={BOARD_UPDATE_PATH(':BoardNumber')} element={<BoardUpdate />} />
@@ -59,13 +60,6 @@ function App() {
       </Route>
       
     </Routes>
-    // <>
-    //   <Header />
-    //   <InputBox label={''} type={'text'} placeholder={''} value={''} setValue={function (value: React.SetStateAction<string>): void {
-    //     throw new Error('Function not implemented.');
-    //   } } error={false} />
-    //   <Footer />
-    // </>
   );
 }
 

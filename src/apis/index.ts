@@ -5,7 +5,7 @@ import SignUpResponseDto from 'interface/response/auth/SignUpResponseDto';
 import ResponseDto from "../interface/response/Response.dto";
 import { GetLoginUserResponseDto } from 'interface/response/user';
 
-const API_DOMAIN = 'http://localhost:3000/';
+const API_DOMAIN = 'http://localhost:4000';
 
 const SIGN_UP_URL = () => `${API_DOMAIN}/auth/sign-up`;
 const SIGN_IN_URL = () => `${API_DOMAIN}/auth/sign-in`;
