@@ -1,0 +1,150 @@
+.searchMain {
+  width: 100%;
+  height: 2084px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-box {
+  width: 1200px;
+  height: 60px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgba(217, 217, 217, 1);
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.choice-box {
+  width: 1000px;
+  height: 40px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 1);
+  margin: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.myChattingRoom {
+  width: 500px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px; /* 86.667% */
+}
+
+.myChattingRoom:hover {
+  cursor:pointer;
+  background-position: right;
+
+  background-color: rgba(185, 185, 185, 1);
+}
+
+.boardList {
+  width: 500px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #000;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px; /* 86.667% */
+}
+
+.boardList:hover {
+  cursor:pointer;
+  background-position: right;
+
+  background-color: rgba(185, 185, 185, 1);
+}
+
+.board-list-item {
+  width: 1200px;
+  height: 60px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgba(255, 255, 255, 1);
+  margin: 10px 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.margin-leftside {
+  width: 5%;
+
+}
+
+.board-name {
+  width: 45%;
+
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px;
+}
+
+.user-nickname {
+  width: 15%;
+
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px;
+}
+
+.date {
+  width: 25%;
+
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px;
+}
+
+.people {
+  width: 10%;
+
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 26px;
+}
+
+.board-list {
+  width: 1200px;
+  height: 60px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 12px;
+
+  background-color: rgba(255, 255, 255, 1);
+}

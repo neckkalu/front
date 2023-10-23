@@ -86,3 +86,13 @@
 
   background-image: url(../src/components/InputBox/assets/image/search_icon.png);
 }
+
+.margin20 {
+  margin: 20px;
+}
+
+.vertical-divider-light-gray {
+  height: 1px;
+
+  background-color: rgba(0, 0, 0, 0.05);
+}

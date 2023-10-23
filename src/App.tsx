@@ -46,12 +46,12 @@ function App() {
       <Route path={MAIN_PATH()} element={<Main />} />
       <Route path={AUTH_PATH()} element={<Authentication />} />
       <Route path={FILTER_PATH()} element={<Filter />} />
-      <Route path={FTFBOARD_PATH()} element={<Board />}>
+      <Route path={FTFBOARD_PATH()} element={<FTFBoard />}>
         <Route path={FTFBOARD_WRITE_PATH()} element={<FTFBoardWrite />} />
         <Route path={FTFBOARD_DETAIL_PATH(':BoardNumber')} element={<FTFBoardDetail />} />
         <Route path={FTFBOARD_UPDATE_PATH(':BoardNumber')} element={<FTFBoardUpdate />} />
       </Route>
-      <Route path={BOARD_PATH()} element={<FTFBoard />}>
+      <Route path={BOARD_PATH()} element={<Board />}>
         <Route path={BOARD_WRITE_PATH()} element={<BoardWrite />} />
         <Route path={BOARD_DETAIL_PATH(':BoardNumber')} element={<BoardDetail />} />
         <Route path={BOARD_UPDATE_PATH(':BoardNumber')} element={<BoardUpdate />} />
