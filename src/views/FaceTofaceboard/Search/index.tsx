@@ -3,7 +3,7 @@ import './style.css';
 import { useNavigate, useParams } from "react-router-dom";
 import { usePagination } from "hooks";
 import Pagination from "components/Pagination";
-import { COUNT_BY_PAGE } from "constant";
+import { BOARD_PATH, COUNT_BY_PAGE } from "constant";
 import BoardListResponseDto from "interface/response/board/BoardListItemResponseDto";
 
 
@@ -19,6 +19,11 @@ export default function FTFBoard() {
 
   // description: 페이지 이동을 위한 네비게이트 함수 //
   const navigator = useNavigate();
+
+  const onBoardButtonClickHandler = () => {
+    navigator(BOARD_PATH());
+  }
+
   
   const getPageBoardList = (boardList: BoardListResponseDto[]) => {
     const lastIndex = 
@@ -39,7 +44,7 @@ export default function FTFBoard() {
         <div className="margin20"></div>
         <div className="choice-box">
           <div className="myChattingRoom">내 채팅방</div>
-          <div className="boardList">비대면 게시물</div>
+          <div className="boardList" onClick={onBoardButtonClickHandler}>비대면 게시물</div>
         </div>
         <div className="board-list-item">
           <div className="margin-leftside"></div>

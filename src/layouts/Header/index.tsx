@@ -32,7 +32,7 @@ export default function Header() {
     // description: 현재 페이지가 인증 화면인지 여부 //
     const isAuth = pathname === AUTH_PATH();
 
-
+    
     // 다른 곳에 참고 or 복사해서 써먹기 //
     // event handler: 로고 클릭 이벤트 처리 함수 //
     const onLogoClickHandler = () => {
@@ -52,45 +52,13 @@ export default function Header() {
     navigator(MAIN_PATH());
   }
 
-    // // state: 검색 버튼 상태 //
-    // const [status, setStatus] = useState<Boolean>(false);
-
-    // if (!status)
-    // // render: 검색 버튼 컴포넌트 렌더링 (클릭 false)  //
-    // return (
-    // <div className='icon-button'>
-    //   <div className='icon search-light-icon'></div>
-    // </div>
-    // );
-
-
-    // // render: 검색 버튼 컴포넌트 렌더링 (클릭 true)  //
-    // return (
-    // <div className='header-search-input-box'> 
-    //   <input className='header-search-input' type='text' placeholder='검색어를 입력해주세요.' />
-    //   <div className='icon-button'>
-    //     <div className='icon search-light-icon'><div/>
-    //   </div>
-    // </div>
-    // );
-
-
-
-    // // compoent: 검색 버튼 컴포넌트  //
-    // const SearchButton = () => {
-    //   //  render: 검색 버튼 컴포넌트 렌더링  //
-    //   return (
-    //     <div className='icon-button'>
-    //       <div className='search-light-icon'></div>
-    //     </div>
-    //   );
-    // }
     //          effect          //
   // description: 로그인 유저 정보가 바뀔 때마다 실행 //
   useEffect(() => {
     setLogin(user !== null);
   }, [user]);
-    
+
+
   return (
     <div id="header">
       <div className='header-container'>
