@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { useCookies } from 'react-cookie';
 import { useDaumPostcodePopup, Address } from 'react-daum-postcode';
 
-import axios from "axios";
 import { useUserStore } from "stores";
 import SignUpRequestDto from "interface/request/auth/SignUpRequestDto";
 import SignInRequestDto from "interface/request/auth/SignInRequestDto";
@@ -64,6 +63,7 @@ export default function Authentication() {
       const now = new Date().getTime();
       const expires = new Date(now + expiredTime * 1000);
 
+      
       setCookie('accessToken', token, { expires, path: MAIN_PATH() });
       navigator(MAIN_PATH());
     }

@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import Header from 'layouts/Header';
-import InputBox from 'components/InputBox';
-import FaceToFaceBoardListItem from 'components/FaceToFaceBoardListItem';
-import Footer from 'layouts/Footer';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Main from 'views/Main';
 import Authentication from 'views/Authentication';
 import Filter from 'views/Filter';
-import User from 'views/User';
 import Container from 'layouts/Container';
 import BoardDetail from 'views/Board/Detail';
 import BoardUpdate from 'views/Board/Update';
@@ -19,11 +14,40 @@ import FTFBoardWrite from 'views/FaceTofaceboard/Write';
 import { MAIN_PATH, AUTH_PATH, FILTER_PATH, USER_PATH, FTFBOARD_PATH, FTFBOARD_WRITE_PATH, FTFBOARD_DETAIL_PATH, FTFBOARD_UPDATE_PATH, BOARD_WRITE_PATH, BOARD_DETAIL_PATH, BOARD_UPDATE_PATH, BOARD_PATH  } from 'constant';
 import FTFBoard from 'views/FaceTofaceboard/Search';
 import Board from 'views/Board/Search';
+import { getSignInUserRequest } from 'apis';
+import ResponseDto from 'interface/response/Response.dto';
+import { GetLoginUserResponseDto } from 'interface/response/user';
+import { useCookies } from 'react-cookie';
+import { useUserStore } from 'stores';
 
 
 function App() {
 
   const [value, setValue] = useState<string>('');
+  
+  // description: 현재 페이지 url 상태 //
+  const { pathname } = useLocation();
+  // description: 유저 스토어 상태 //
+  const { user, setUser } = useUserStore();
+  // description: Cookie 상태 //
+  const [cookies, setCookie] = useCookies();
+
+  //          function          //
+  const getSignInUserResponseHandler = (result: GetLoginUserResponseDto | ResponseDto) => {
+    const { code } = result;
+    if (code === 'NU') alert('토큰 정보가 잘못됐습니다.');
+    if (code === 'DE') alert('데이터베이스 에러입니다.');
+    if (code !== 'SU') return;
+
+    setUser({...result as GetLoginUserResponseDto});
+  }
+
+  //          effect          //
+  useEffect(() => {
+    const accessToken = cookies.accessToken;
+    console.log(accessToken);
+    if (!user && accessToken) getSignInUserRequest(accessToken).then(getSignInUserResponseHandler);
+  }, [pathname]);
   
   // render: Appliction 컴포넌트 렌더링 //
   // description: 메인화면 : '/' -Main //
